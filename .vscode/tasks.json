@@ -1,0 +1,11 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Generate",
+         "type": "shell",
+         "command": "_build/docker_build.cmd",
+         "group": "build"
+      }
+   ]
+}
