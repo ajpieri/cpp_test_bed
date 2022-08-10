@@ -2,7 +2,7 @@
    "version": "2.0.0",
    "tasks": [
       {
-         "label": "Generate",
+         "label": "Build CPP Test Bed",
          "type": "shell",
          "command": "_build/docker_build.cmd",
          "group": "build"

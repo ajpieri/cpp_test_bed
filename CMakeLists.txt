@@ -8,10 +8,16 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/src
 )
 
-file(GLOB SourceFiles
-    "${PROJECT_SOURCE_DIR}/inc/*.h"
-    "${PROJECT_SOURCE_DIR}/src/*.cpp"
-    main.cpp
+set(SourceFiles
+    inc/Test.h
+    src/Test.cpp
+    src/main.cpp
+)
+
+source_group(Test 
+   FILES
+      src/Test.cpp
+      inc/Test.h
 )
 
 # add the executable
