@@ -2,9 +2,10 @@
 
 void Test::Print(int argc, char** argv)
 {
-    std::cout << "You have entered " << argc
-         << " arguments:" << "\n";
-
-    for (int i = 0; i < argc; ++i)
-        std::cout << argv[i] << "\n";
+   std::cout << "You have just entered " << argc << " argument(s):" << "\n";
+   
+   for (int i = 0; i < argc; ++i)
+   {
+     std::cout << "argv[" << i << "]: " << argv[i] << "\n";
+   }
 }

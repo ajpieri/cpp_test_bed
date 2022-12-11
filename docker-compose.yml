@@ -1,0 +1,6 @@
+version: '2'
+services:
+  tony:
+    image: "cpp-test-bed:latest"
+    command:
+      - "-c"

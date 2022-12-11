@@ -4,8 +4,14 @@
       {
          "label": "Build CPP Test Bed",
          "type": "shell",
+         "command": "_build/build.cmd",
+         "group": "build"
+      },
+      {
+         "label": "Docker Build CPP Test Bed",
+         "type": "shell",
          "command": "_build/docker_build.cmd",
          "group": "build"
-      }
+      },
    ]
 }

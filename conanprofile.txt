@@ -1,0 +1,12 @@
+[settings]
+os=Windows
+compiler=Visual Studio
+compiler.version=15
+build_type=Release
+arch=x86
+
+[options]
+openssl:shared=True
+
+[tool_requires]
+rabbitmq/0.1@ajpieri/stable

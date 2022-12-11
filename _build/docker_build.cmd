@@ -1,17 +1,5 @@
-pushd _build
-
-mkdir windows
-
-pushd windows
-
 :generate
-cmake ../../
+conan install . --profile ./conanprofile.txt --install-folder _deps
 
 :build
-cmake --build . --config Release
-
-:install
-cmake --install .
-
-popd
-popd
+docker build -t "cpp-test-bed" .
