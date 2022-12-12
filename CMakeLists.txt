@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 3.10)
 # set the project name
 project(CppTestBed)
 
-message("Tony: ${PROJECT_SOURCE_DIR}")
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/_deps)
 
@@ -32,10 +31,6 @@ source_group(Test
 # add the executable
 add_executable("${PROJECT_NAME}" "${SourceFiles}")
 
-# target_include_directories(rabbitmq PUBLIC )
-message("Tony2: ${rabbitmq_LIBRARIES}")
-message("Tony3: ${rabbitmq_LIBRARY_LIST}")
-message("Tony4: ${rabbitmq_LIB_DIRS}")
 target_link_libraries("${PROJECT_NAME}" ${rabbitmq_LIBRARIES})
 
 install (TARGETS "${PROJECT_NAME}" DESTINATION ${PROJECT_SOURCE_DIR}/install)
