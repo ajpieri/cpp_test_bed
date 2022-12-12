@@ -4,6 +4,9 @@ mkdir windows
 
 pushd windows
 
+:dependencies
+conan install ../../ --profile ../../conanprofile.txt --install-folder ../../_deps
+
 :generate
 cmake ../../
 
