@@ -14,5 +14,7 @@ FROM ubuntu:latest
 WORKDIR .
 # Copy the built binary over from previous stage
 COPY --from=builder /build/CppTestBed ./
+COPY entrypoint.sh ./
 # Run the binary in the new container
-CMD ["./CppTestBed"]
+# CMD ["./CppTestBed"]
+ENTRYPOINT [ "./entrypoint.sh" ]
