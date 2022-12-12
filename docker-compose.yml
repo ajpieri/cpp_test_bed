@@ -3,4 +3,4 @@ services:
   tony:
     image: "cpp-test-bed:latest"
     command:
-      - "-c"
+      [This, is, Tony's, Test]
