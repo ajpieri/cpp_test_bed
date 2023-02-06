@@ -8,9 +8,11 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/_deps)
 
 find_package(rabbitmq REQUIRED)
 
+message("TEST: ${rabbitmq_INCLUDE_DIRS}")
+
 include_directories(
-    ${PROJECT_SOURCE_DIR}/inc
-    ${PROJECT_SOURCE_DIR}/src
+    inc
+    src
     ${rabbitmq_INCLUDE_DIRS}
 )
 
@@ -19,6 +21,8 @@ link_directories(${rabbitmq_LIB_DIRS})
 set(SourceFiles
     inc/Test.h
     src/Test.cpp
+    inc/Packer.h
+    src/Packer.cpp
     src/main.cpp
 )
 
@@ -26,6 +30,8 @@ source_group(Test
    FILES
       src/Test.cpp
       inc/Test.h
+      src/Packer.cpp
+      inc/Packer.h
 )
 
 # add the executable

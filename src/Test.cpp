@@ -2,7 +2,6 @@
 
 void Test::Print(int argc, char** argv)
 {
-   std::cout << "In here" << std::endl;
    std::cout << "argc: " << argc << std::endl;
    std::cout << "You have just entered " << argc << " argument(s):" << std::endl;
    
